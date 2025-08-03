@@ -2,89 +2,100 @@
 
 ## Identified Problem or Need
 
-Replace this text with a clearly stated problem or need that exists that your project will attempt to solve / fulfil.
+My problem is that firewood merchants can't keep up with their customers, and would like to keep track of all the wood they have sold last year. 
 
 
 ## End-User Requirements
 
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
+My website needs to hold and summarise customer data easily for the end-user. They need to be able to add and remove customers, orders, types of firewood, etc. 
 
 
 ## Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
+I will create a website that can
+
+- Hold a list of customer records
+- Be able to add customers from the database
+- Summarises the wood orders from previous years
+- Change customer records
+- Removes customers from the database
 
 
 ---
 
 # Relevant Implications
 
-## NAME OF IMPLICATION 1
+## Privacy
 
-Replace this text with a clear explanation of what the implication means.
-
-### Relevance to the System
-
-Replace this text with an explanation of why the implication is relevant to this particular project.
-
-### Impact / Considerations
-
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
-
-
-## NAME OF IMPLICATION 2
-
-Replace this text with a clear explanation of what the implication means.
+MAking sure end user data remains private
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+My system will hold private user data, like email addresses, addresses, and phone numbers. 
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+My website will need to hold data securely. 
 
 
 
-## NAME OF IMPLICATION 3
+## Usability
 
-Replace this text with a clear explanation of what the implication means.
+Getting Things Done Quickly and Easily
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+My website will need to be usable for all the workers at the company to use. 
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+ Information about the customers address and order will need to be accessed quicker than information about the customers previous orders. 
 
 
+## Functionality
 
-## NAME OF IMPLICATION 4
-
-Replace this text with a clear explanation of what the implication means.
+Everything Works, and Works Well
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+My website will need to be functional, because a crash could cause the customer a delay. 
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+I will put care into coding it so it has little to no bugs. 
+
+
+## Aesthetic
+
+Great Designs with Style and Impact
+
+### Relevance to the System
+my website should be nice to look at
+
+### Impact / Considerations
+
+use a recognizable colour scheme based on the business’s logo colour scheme. 
 
 
 
-## NAME OF IMPLICATION 5
+## End-User
 
-Replace this text with a clear explanation of what the implication means.
+Meets the User's Specific Needs
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
-
+My website will need to cater to my dad and his workers need.
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+Most, if not all, use glasses, so an increased text size may be something I need to consider. 
 
+## Accessibility
 
+Everyone Can Use It, On Any Device
+
+### Relevance to the System
+
+My website needs to be accessible for all  n the users.
+
+### Impact / Considerations
+This could mean larger font sizes, or increased colours. 

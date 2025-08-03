@@ -12,9 +12,9 @@ Develop a prototype that simulates the key functionality of the system, then tes
 
 ## Initial Database Design
 
-Replace this text with notes regarding the DB design.
+This is my initial database design, linking the customer and it's data, to it's order, too what each order contains, and which woods are in each order. 
 
-![SCREENSHOT OF DB DESIGN](screenshots/example.png)
+![SCREENSHOT OF DB DESIGN](screenshots/DrawSQL1)
 
 
 ---
@@ -25,12 +25,14 @@ The first stage of prototyping was to explore how the UI might 'flow' between st
 
 This Figma demo shows the initial design for the UI 'flow':
 
-**FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT**
-
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/dSYEgeYm3HbyiUYzn8DSuU/Untitled?node-id=0-1&embed-host=share" allowfullscreen></iframe>
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+I gave this demo to potential end users to see if they had any comments/feedback. These issues were raised. 
 
+> There is no way to see all wood from home. 
+> There is no summary of the types of wood sold
+> There is no way to search for wood/customers. 
 ### Changes / Improvements
 
 Replace this text with notes any improvements you made as a result of the testing.

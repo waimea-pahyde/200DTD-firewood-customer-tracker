@@ -10,17 +10,17 @@ by Polly
 If you own a firewood business, it can be hard to keep track of what the customers order, their personal details, and which firewood they ordered last year. This project will create an easy way for owners of firewood businesses to keep track of these things. 
 
 - Hold a list of customer records
-- Be able to add/remove customers from the database
+- Be able to add customers from the database
 - Summarises the wood orders from previous years
-- Feature 4 here
-- Feature 5 here
+- Change customer records
+- Removes customers from the database
 
 
 ---
 
 ## Project Links
 
-- [GitHub repo for the project](https://...)
+- [GitHub repo for the project](https://github.com/waimea-pahyde/200DTD-firewood-customer-tracker)
 - [Live web app](https://...)
 
 
