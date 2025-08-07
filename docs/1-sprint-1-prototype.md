@@ -16,56 +16,92 @@ This is my initial database design, linking the customer and it's data, to it's 
 
 ![SCREENSHOT OF DB DESIGN](screenshots/DrawSQL1)
 
+I showed this to my end user, and the end user said this looked good. 
+
+
 
 ---
 
-## UI 'Flow'
+
+## UI 'Prototype'
 
 The first stage of prototyping was to explore how the UI might 'flow' between states, based on the required functionality.
 
 This Figma demo shows the initial design for the UI 'flow':
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/dSYEgeYm3HbyiUYzn8DSuU/Untitled?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+
 ### Testing
 
 I gave this demo to potential end users to see if they had any comments/feedback. These issues were raised. 
 
 > There is no way to see all wood from home. 
+
 > There is no summary of the types of wood sold
+
 > There is no way to search for wood/customers. 
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-*IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
-
----
-
-## Initial UI Prototype
-
-The next stage of prototyping was to develop the layout for each screen of the UI.
-
-This Figma demo shows the initial layout design for the UI:
-
-*FIGMA PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
-### Testing
-
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+After my feedback from the end user, I added a 'see wood' button, a search bar at the top, and a pie chart to the wood page. 
 
-*FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/AzaaLIBu6Ym8BuGRKtaqjH/Untitled--Copy-?node-id=0-1&embed-host=share" allowfullscreen></iframe>
 
+After this demo, I went back to my end user and asked for more feedback.
+> There is no way to see the Total fields
+
+> There is no way to see the date the customer ordered. 
+
+> The pie chart needs more information
+
+I added the amount of wood sold to the pi chart, another wood type to better demonstrate, a people who ordered column to the wood page, and added a date column to the customers list. 
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/JKcLpcsrvzZRWVojkxSdbP/Third-Draft?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+
+The next feedback from the end user was 
+> There needs to be a login screen to secure the database
+
+> There needs to be an orders page form
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/wi6YB8CYlfreT2zdBejfmF/Fourth-draft?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+
+I brought that design back to the end user, and the end user agreed with the design. 
 
 ---
 
 ## Refined UI Prototype
 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
+
+### Colours
+I explored some colour palettes that I thought would work well. I used the Realtime Colors website:
+
+- [Palette 1](https://www.realtimecolors.com/dashboard?colors=130707-fefbfb-501d00-eba961-923a0b&fonts=Inter)
+
+- [Palette 2](https://www.realtimecolors.com/dashboard?colors=130707-fefbfb-91441d-e8a45c-963c41&fonts=Inter)
+
+- [Palette 3](https://www.realtimecolors.com/dashboard?colors=0b0f0a-f5faf5-337428-73bc66-364c32&fonts=Inter)
+
+### Testing
+
+All of these palettes worked okay contrast wise, so I asked my end users which one they preferred. 
+
+The end user decided the red and brown scheme, palette 2, was too much. 
+The feedback given on the other two palettes was to increase the contrast. 
+
+- [Increased contrast palette 1](https://www.realtimecolors.com/dashboard?colors=130707-fefbfb-501d00-ca9f71-ce8761&fonts=Inter-Inter)
+
+
+- [Increased contrast palette 3](https://www.realtimecolors.com/dashboard?colors=0b0f0a-f5faf5-89d47c-87b180-364c32&fonts=Inter-Inter)
+
+
+The end user decided to go with the soft brown, palette 1. 
+
+
+
+
+
+
 
 This Figma demo shows the UI with refinements applied:
 
