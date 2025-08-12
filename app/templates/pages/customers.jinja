@@ -1,0 +1,79 @@
+{#=====================================================
+  Things list page
+  - List of things passed in as 'things' array
+  - Form for adding a new thing
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    Customer List
+
+{% endblock %}
+
+
+{% block content %}
+
+    <article id="intro">
+    <h1>Customer Data</h1>
+    </article>
+
+    <input
+    type="search"
+  name="search"
+  placeholder="Search"
+  aria-label="Search"
+  id="search"
+/>
+
+<article id="backgroundPieChart">
+
+<img src="/static/images/piechart.png" id="image">
+<p>Generic Wood: 50%</p>
+<p>generic Wood 2: 50%</p>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article>
+
+        <ul>
+            {% for thing in things %}
+
+                <li>
+                    <a href="/thing/{{ thing.id }}">
+                        {{ thing.name }}
+                    </a>
+                </li>
+
+            {% else %}
+
+                <p>None!</p>
+
+            {% endfor %}
+        </ul>
+
+    </article>
+
+
+ 
+
+{% endblock %}
+

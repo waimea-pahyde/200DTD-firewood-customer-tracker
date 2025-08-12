@@ -33,3 +33,73 @@
 #messages .message.success { color: var(--pico-color-green-500); }
 #messages .message.error   { color: var(--pico-color-red-500); }
 
+article#intro {
+    display: flex;
+    justify-content: center ;
+    background-color: #CA9F71;
+    max-width: min-content;
+    justify-self: center;
+
+}
+
+article#intro > h1 {
+    font-size: 50px ;
+    color: #501D00 ;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+
+  
+    
+
+}
+
+
+article#backgroundOfButtons {
+    display: flex;
+    flex-direction: column;
+    background-color: #501D00;  
+    width: max-content;
+    justify-self: center;
+
+}
+
+#IAMBUTTON {
+    background-color: #CE8761;
+    color: aliceblue;
+    border-color: #CE8761;
+    justify-content: center;
+    justify-self: center;
+    flex: 1;
+    opacity: 100%;
+
+}
+
+
+#search {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    background-color: #CE8761;
+    color: #501D00;
+    
+}
+
+::placeholder{
+    color: #501D00;
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: red;
+  }
+
+
+  #backgroundPieChart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }

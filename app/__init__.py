@@ -56,6 +56,16 @@ def show_all_things():
         # And show them on the page
         return render_template("pages/things.jinja", things=things)
 
+#----------------------------------------------------------------
+# customer lists - show all customers
+#------------------------------------------------------------------
+@app.get("/customers/")
+def customers():
+    return render_template("pages/customers.jinja")
+
+
+
+
 
 #-----------------------------------------------------------
 # Thing page route - Show details of a single thing

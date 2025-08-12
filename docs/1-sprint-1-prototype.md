@@ -105,7 +105,7 @@ The end user decided to go with the soft brown, palette 1.
 
 This Figma demo shows the UI with refinements applied:
 
-*FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/aHXEVqepdViYgIhESoQPeP/Refined-version-1?node-id=1-10&embed-host=share" allowfullscreen></iframe>
 
 ### Testing
 
