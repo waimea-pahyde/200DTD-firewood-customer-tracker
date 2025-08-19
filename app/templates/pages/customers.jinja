@@ -31,36 +31,38 @@
 <article id="backgroundPieChart">
 
 <img src="/static/images/piechart.png" id="image">
-<p>Generic Wood: 50%</p>
-<p>generic Wood 2: 50%</p>
 
+
+<article id="textBackground">
+<p class="">Generic Wood: 50%</p>
+<p>Generic Wood 2: 50%</p>
+</article>
 
 </article>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article>
+  <article>
 
         <ul>
-            {% for thing in things %}
+            {% for customer in customers %}
 
                 <li>
-                    <a href="/thing/{{ thing.id }}">
-                        {{ thing.name }}
+                    <a href="/customer/{{ customer.id }}">
+                        {{ customer.name }}
                     </a>
+
+                    <ul>
+                        {% for order in orders %}
+                            {% if customer.id == order.cid %}
+                                <li>
+                                    <a href="/order/{{ order.id }}">
+                                         {{ order.date  }}
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% else %}
+                            <li>NONE</li>
+                        {% endfor %}
+                    </ul>
                 </li>
 
             {% else %}
@@ -71,7 +73,6 @@
         </ul>
 
     </article>
-
 
  
 

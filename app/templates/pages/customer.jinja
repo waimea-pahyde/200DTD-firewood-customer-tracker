@@ -1,0 +1,60 @@
+{#=====================================================
+  Thing page
+  - Shows details of a single thing
+  - Has a delete link to remove it
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    customer {{ customer.id }}
+
+{% endblock %}
+
+
+{% block content %}
+
+<article>
+
+<h1>{{ customer.name }}</h1>
+
+<article>
+
+<p>Email: {{customer.email}} </p>
+<p>phone: {{customer.phone}} </p>
+<p>Address: {{customer.address}} </p>
+</article>
+
+<article>
+
+<h2>Orders:</h2>
+
+  {# {% for order in orders %}
+        {% if customer.id == order.cid %}
+            <li>
+                <a href="/order/{{ order.id }}">
+                    {{ order.date  }}
+                </a>
+            </li>
+        {% endif %}
+    {% else %}
+    
+    <li>NONE</li>
+                    </ul>
+                </li>
+                   {% endfor%} #}
+
+{{ order.name }}
+
+ 
+                   
+
+</article>
+
+
+</article>
+
+{% endblock %}
+

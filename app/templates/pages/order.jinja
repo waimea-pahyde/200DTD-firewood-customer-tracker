@@ -1,0 +1,33 @@
+{#=====================================================
+  Thing page
+  - Shows details of a single thing
+  - Has a delete link to remove it
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    Order {{ order.id }}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+    <h1>Order {{ order.id }}</h1>
+
+        {{   wood.type   }}
+
+<div></div>
+
+    <a role="button" href="/things">Back to Thing List</a>
+
+
+
+{% endblock %}
+

@@ -61,7 +61,38 @@ def show_all_things():
 #------------------------------------------------------------------
 @app.get("/customers/")
 def customers():
-    return render_template("pages/customers.jinja")
+    with connect_db() as client:
+        # Get all the things from the DB
+        sql = """
+            SELECT 
+                name, 
+                id
+            FROM customers
+            ORDER BY name ASC
+        """
+        params = []
+        result = client.execute(sql, params)
+        customers = result.rows
+
+        sql = """
+            SELECT 
+                id, 
+                date,
+                cid
+            FROM orders
+            ORDER BY date DESC
+        """
+        params = []
+        result = client.execute(sql, params)
+        orders = result.rows
+
+
+        # And show them on the page
+        return render_template("pages/customers.jinja", 
+                                                customers=customers,
+                                                orders=orders)
+
+    
 
 
 
@@ -74,7 +105,7 @@ def customers():
 def show_one_thing(id):
     with connect_db() as client:
         # Get the thing details from the DB
-        sql = "SELECT id, name, price FROM things WHERE id=?"
+        sql = "SELECT * FROM customers WHERE id=?"
         params = [id]
         result = client.execute(sql, params)
 
@@ -127,4 +158,68 @@ def delete_a_thing(id):
         flash("Thing deleted", "success")
         return redirect("/things")
 
+#----------------------------------------------------------------
+#Orders route
+#----------------------------------------------------------------
+@app.get("/order/<int:id>")
+def show_one_order(id):
+    with connect_db() as client:
+        # Get the thing details from the DB
+        sql = "SELECT * FROM contains WHERE contains.oid=?"
+        params = [id]
+        result = client.execute(sql, params)
+        # Did we get a result?
+        if result.rows:
+            # yes, so show it on the page
+            order = result.rows[0]
 
+            
+        sql = "SELECT * FROM wood"
+        params = []
+        result = client.execute(sql, params)
+        # Did we get a result?
+        if result.rows:
+            # yes, so show it on the page
+            wood = result.rows[0]
+            
+            return render_template("pages/order.jinja", order=order , wood=wood)
+
+        else:
+            # No, so show error
+            return not_found_error()
+        
+#----------------------
+# Customer route
+#----------------------
+
+
+@app.get("/customer/<int:id>")
+def show_one_customer(id):
+    with connect_db() as client:
+        # Get the thing details from the DB
+        sql = "SELECT * FROM customers WHERE id=?"
+        params = [id]
+        result = client.execute(sql, params)
+
+        # Did we get a result?
+        if result.rows:
+            # yes, so show it on the page
+            customer = result.rows[0]
+        else:
+            # No, so show error
+            return not_found_error()
+
+        sql = """
+            SELECT 
+                id, 
+                date,
+                cid
+            FROM orders
+            ORDER BY date DESC
+        """
+        params = []
+        result = client.execute(sql, params)
+        order = result.rows
+        return render_template("pages/customer.jinja" , customer=customer, order=order)
+
+        

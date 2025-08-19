@@ -109,7 +109,9 @@ This Figma demo shows the UI with refinements applied:
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+I gave this design to my end user, and the feed back was 
+
+> No need for a search field on the wood page 
 
 ### Changes / Improvements
 

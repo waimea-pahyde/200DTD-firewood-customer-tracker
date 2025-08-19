@@ -96,10 +96,23 @@ article#backgroundOfButtons {
     color: red;
   }
 
-
+#image{
+    max-width: 50%;
+}
   #backgroundPieChart{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
+    background-color: #501D00   ;
+    
   }
+
+  #textBackground {
+    background-color: #CE8761;
+    width: 50%;
+    
+    
+  }
+
+  /* big important ones I ithinkj */
