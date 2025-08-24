@@ -86,11 +86,26 @@ def customers():
         result = client.execute(sql, params)
         orders = result.rows
 
+        sql = """
+            SELECT 
+                type, 
+                SUM(contains.qty) AS total
+            FROM wood
+            JOIN contains ON contains.wid = wood.id
+            GROUP BY wood.type
+            ORDER BY type ASC
+        """
+        params = []
+        result = client.execute(sql, params)
+        woods = result.rows
+
+        
 
         # And show them on the page
         return render_template("pages/customers.jinja", 
                                                 customers=customers,
-                                                orders=orders)
+                                                orders=orders,
+                                                woods=woods)
 
     
 
@@ -165,7 +180,7 @@ def delete_a_thing(id):
 def show_one_order(id):
     with connect_db() as client:
         # Get the thing details from the DB
-        sql = "SELECT * FROM contains WHERE contains.oid=?"
+        sql = "SELECT * FROM contains, orders WHERE contains.oid=?"
         params = [id]
         result = client.execute(sql, params)
         # Did we get a result?

@@ -30,12 +30,15 @@
 
 <article id="backgroundPieChart">
 
-<img src="/static/images/piechart.png" id="image">
+{# <img src="/static/images/piechart.png" id="image"> #}
 
+<div style="width: 800px;">
+    <canvas id="wood-chart"></canvas>
+</div>
 
 <article id="textBackground">
-<p class="">Generic Wood: 50%</p>
-<p>Generic Wood 2: 50%</p>
+    <p class="">Generic Wood: 50%</p>
+    <p>Generic Wood 2: 50%</p>
 </article>
 
 </article>
@@ -74,7 +77,34 @@
 
     </article>
 
- 
+<script>
+const data = [
+
+    {# Generating the JSON data for the chart #}
+    {% for wood in woods %}
+
+        { type: "{{ wood.type }}", count: {{ wood.total }} },
+
+    {%endfor %}
+
+  ];
+
+new Chart(
+    document.getElementById('wood-chart'),
+    {
+      type: 'pie',
+      data: {
+        labels: data.map(row => row.type),
+        datasets: [
+          {
+            label: 'Wood by Type',
+            data: data.map(row => row.count)
+          }
+        ]
+      }
+    }
+  )
+</script> 
 
 {% endblock %}
 

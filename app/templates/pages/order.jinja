@@ -17,17 +17,23 @@
 
 {% block content %}
 
-
+<article>
 
     <h1>Order {{ order.id }}</h1>
 
-        {{   wood.type   }}
+    
+  
+       
+        {{ wood.type    }}
+        {{  order.date   }}
+
+ 
 
 <div></div>
 
-    <a role="button" href="/things">Back to Thing List</a>
+    <a role="button" href="/customers">Back to customers List</a>
 
-
+</article>
 
 {% endblock %}
 
