@@ -225,16 +225,20 @@ def show_one_customer(id):
             return not_found_error()
 
         sql = """
-            SELECT 
-                id, 
-                date,
-                cid
-            FROM orders
+            SELECT *
+            FROM orders 
+            WHERE cid=?
             ORDER BY date DESC
         """
-        params = []
+        params = [id]
         result = client.execute(sql, params)
-        order = result.rows
-        return render_template("pages/customer.jinja" , customer=customer, order=order)
+        
+        if result.rows:
+            orders = result.rows
+            
+        else:
+            return not_found_error()
+        
+        return render_template("pages/customer.jinja" , customer=customer, orders=orders)
 
         

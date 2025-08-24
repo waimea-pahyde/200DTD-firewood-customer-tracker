@@ -9,7 +9,7 @@
 
 {% block title %}
 
-    Customer List
+    Wood
 
 {% endblock %}
 
@@ -17,21 +17,12 @@
 {% block content %}
 
     <article id="intro">
-    <h1>Customer Data</h1>
+    <h1>Wood Data</h1>
     </article>
-
-    <input
-    type="search"
-  name="search"
-  placeholder="Search"
-  aria-label="Search"
-  id="search"
-/>
 
 <article id="backgroundPieChart">
 
-{# <img src="/static/images/piechart.png" id="image"> #}
-
+{# Wood Chart #}
 <div style="width: 800px;">
     <canvas id="wood-chart"></canvas>
 </div>
@@ -46,18 +37,18 @@
   <article>
 
         <ul>
-            {% for customer in customers %}
+            {% for wood in woods %}
 
                 <li>
-                    <a href="/customer/{{ customer.id }}">
-                        {{ customer.name }}
+                    <a>
+                        {{ wood.name }}
                     </a>
 
                     <ul>
-                        {% for order in orders %}
+                        {% for customer in customers %}
                             {% if customer.id == order.cid %}
                                 <li>
-                                    <a href="/order/{{ order.id }}">
+                                    <a href="//{{ order.id }}">
                                          {{ order.date  }}
                                     </a>
                                 </li>
@@ -81,7 +72,6 @@
 const data = [
 
     {# Generating the JSON data for the chart #}
-    
     {% for wood in woods %}
 
         { type: "{{ wood.type }}", count: {{ wood.total }} },

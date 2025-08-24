@@ -30,29 +30,17 @@
 <article>
 
 <h2>Orders:</h2>
-
-  {# {% for order in orders %}
-        {% if customer.id == order.cid %}
-            <li>
-                <a href="/order/{{ order.id }}">
-                    {{ order.date  }}
-                </a>
-            </li>
-        {% endif %}
-    {% else %}
     
-    <li>NONE</li>
-                    </ul>
-                </li>
-                   {% endfor%} #}
 
-{{ order.name }}
 
- 
-                   
-
+    {% for order in orders %}
+        <li>
+            <a href="/order/{{ order.id }}">
+                {{ order.date  }}
+            </a>
+        </li>            
+    {% endfor%}
 </article>
-
 
 </article>
 
