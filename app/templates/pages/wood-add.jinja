@@ -1,0 +1,93 @@
+{#=====================================================
+  Things list page
+  - List of things passed in as 'things' array
+  - Form for adding a new thing
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    Track an order
+
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>Log an order</h1>
+
+    <article>
+        <form action="/add" method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Customer Name"
+                required
+            >
+
+            <input type="date" name="date" aria-label="Date">
+    
+            
+            <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Woods</th>
+                    <th scope="col">Amounts</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Generic Wood One</th>
+                    <td>
+                        <input
+                        type="number"
+                        placeholder="amount"
+                        name="1">
+                    </td>
+                  </tr>
+                  
+                  
+                  <tr>
+                    <th scope="row">Generic Wood Two</th>
+                    <td>
+                        <input
+                        type="number"
+                        placeholder="amount"
+                        name="2">
+                    </td>
+                  </tr>
+                  
+                </tfoot>
+            </table>
+
+            <input
+                type="text"
+                name="email"
+                placeholder="Email Adress"
+                required
+            >
+
+            <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number"
+                required
+            >
+            <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                required
+            >
+
+            <button>Add the Thing</button>
+
+        </form>
+
+    </article>
+
+{% endblock %}
+

@@ -20,14 +20,14 @@
     <h1>Customer Data</h1>
     </article>
 
-    <input
-    type="search"
-  name="search"
-  placeholder="Search"
-  aria-label="Search"
-  id="search"
-/>
 
+
+
+
+
+ 
+
+{# Pie Chart Stuff - Move to wood page.  #}
 <article id="backgroundPieChart">
 
 {# <img src="/static/images/piechart.png" id="image"> #}
@@ -37,14 +37,39 @@
 </div>
 
 <article id="textBackground">
-    <p class="">Generic Wood: 50%</p>
-    <p>Generic Wood 2: 50%</p>
-</article>
+  {% for wood in woods%}
+    <p>{{wood.type}} : {{wood.total}}</p>
+{%endfor%}
 
 </article>
 
+</article>
+
+
+{# The custoemrs list - Don't move this #}
   <article>
+   {# Search functions #}
+  
+  <form method="POST" action="/search">         
+    <input
+    type="search"
+  name="search"
+  placeholder="Search"
+  aria-label="Search"
+  id="search" 
+  onchange="this.form.submit()"/>
+  </form>
 
+  {%for result in results%}
+    <a href="/customer/{{result.id}}">
+    {{result.name}}
+    </a>
+    <br>
+
+  {%endfor%}
+        
+        
+        <H2>Cutomers:</H2>
         <ul>
             {% for customer in customers %}
 

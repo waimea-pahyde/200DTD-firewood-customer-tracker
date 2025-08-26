@@ -138,7 +138,7 @@ def show_one_thing(id):
 #-----------------------------------------------------------
 # Route for adding a thing, using data posted from a form
 #-----------------------------------------------------------
-@app.post("/add")
+@app.post("/addExample")
 def add_a_thing():
     # Get the data from the form
     name  = request.form.get("name")
@@ -241,4 +241,94 @@ def show_one_customer(id):
         
         return render_template("pages/customer.jinja" , customer=customer, orders=orders)
 
+        #==============================
+
+
+@app.post("/search")
+def search():
+    # Get the data from the form
+    customers  = request.form.get("search")
+    
+
+    # Sanitise the text inputs
+    customers = html.escape(customers)
+
+    with connect_db() as client:
+        # Add the thing to the DB
+        sql = "SELECT * FROM customers WHERE name LIKE ?"
+        params = [f"%{customers}%"]
+        result = client.execute(sql, params)
+        results = result.rows
+
+        sql = """
+            SELECT 
+                name, 
+                id
+            FROM customers
+            ORDER BY name ASC
+        """
+        params = []
+        result = client.execute(sql, params)
+        customers = result.rows
+
+        sql = """
+            SELECT 
+                id, 
+                date,
+                cid
+            FROM orders
+            ORDER BY date DESC
+        """
+        params = []
+        result = client.execute(sql, params)
+        orders = result.rows
+
+        sql = """
+            SELECT 
+                type, 
+                SUM(contains.qty) AS total
+            FROM wood
+            JOIN contains ON contains.wid = wood.id
+            GROUP BY wood.type
+            ORDER BY type ASC
+        """
+        params = []
+        result = client.execute(sql, params)
+        woods = result.rows
+
         
+
+        # And show them on the page
+        return render_template("pages/customers.jinja", 
+                                                customers=customers,
+                                                orders=orders,
+                                                woods=woods,
+                                                results=results)
+    
+
+
+
+@app.get("/wood-add")
+def get_the_order():
+    return render_template("pages/wood-add.jinja")
+
+
+#adding things
+@app.post("/add")
+def add_an_order():
+    # Get the data from the form
+    name  = request.form.get("name")
+    date = request.form.get("date")
+
+    # Sanitise the text inputs
+    name = html.escape(name)
+
+    with connect_db() as client:
+        # Add the thing to the DB
+        sql = "INSERT INTO things, orders (name, date) VALUES (?, ?)"
+        params = [name, price]
+        client.execute(sql, params)
+
+        # Go back to the home page
+        flash(f"Thing '{name}' added", "success")
+        return redirect("/things")
