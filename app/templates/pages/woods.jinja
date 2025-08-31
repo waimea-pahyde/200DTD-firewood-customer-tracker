@@ -1,0 +1,88 @@
+{#=====================================================
+  Things list page
+  - List of things passed in as 'things' array
+  - Form for adding a new thing
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    Wood
+
+{% endblock %}
+
+
+{% block content %}
+
+    <article id="intro">
+    <h1>Wood Data</h1>
+    </article>
+
+<article id="backgroundPieChart">
+
+{# Wood Chart #}
+<div style="width: 800px;">
+    <canvas id="wood-chart"></canvas>
+</div>
+
+<article id="textBackground">
+    <p class="">Generic Wood: 50%</p>
+    <p>Generic Wood 2: 50%</p>
+</article>
+
+</article>
+
+  <article>
+
+        <ul>
+            {% for wood in woods %}
+
+                <li>
+                    <a href="wood/{{wood.id}}">
+                        {{ wood.type }}
+                    </a>
+
+                </li>
+
+            {% else %}
+
+                <p>None!</p>
+
+            {% endfor %}
+        </ul>
+
+    </article>
+
+<script>
+const data = [
+
+    {# Generating the JSON data for the chart #}
+    {% for wood in woods %}
+
+        { type: "{{ wood.type }}", count: {{ wood.total }} },
+
+    {%endfor %}
+
+  ];
+
+new Chart(
+    document.getElementById('wood-chart'),
+    {
+      type: 'pie',
+      data: {
+        labels: data.map(row => row.type),
+        datasets: [
+          {
+            label: 'Wood by Type',
+            data: data.map(row => row.count)
+          }
+        ]
+      }
+    }
+  )
+</script> 
+
+{% endblock %}
+

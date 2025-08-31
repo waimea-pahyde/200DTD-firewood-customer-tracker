@@ -319,16 +319,83 @@ def add_an_order():
     # Get the data from the form
     name  = request.form.get("name")
     date = request.form.get("date")
-
+    One = request.form.get("1")
     # Sanitise the text inputs
     name = html.escape(name)
 
     with connect_db() as client:
         # Add the thing to the DB
-        sql = "INSERT INTO things, orders (name, date) VALUES (?, ?)"
-        params = [name, price]
+        sql = "INSERT INTO customers, orders, contains (name, date, qty) VALUES (?,?,?)"
+        params = [name,date]
         client.execute(sql, params)
 
         # Go back to the home page
-        flash(f"Thing '{name}' added", "success")
-        return redirect("/things")
+        flash(f"{name} added.", "success")
+        return redirect("/")
+    
+    # =============
+
+    #-----------------------------------------------------------
+# Things page route - Show all the things, and new thing form
+#-----------------------------------------------------------
+@app.get("/woods/")
+def show_all_wood():
+    with connect_db() as client:
+        # Get all the things from the DB
+        sql = "SELECT * FROM wood"
+        params = []
+        result = client.execute(sql, params)
+        wood = result.rows
+
+        sql = "SELECT name, id FROM customers"
+        params = []
+        result = client.execute(sql, params)
+        customers = result.rows
+
+        sql = "SELECT cid FROM orders"
+        params = []
+        result = client.execute(sql, params)
+        ids= result.rows
+
+        # And show them on the page
+        return render_template("pages/wood.jinja", woods=wood, customers=customers, ids=ids)
+
+
+#=================================
+# shwwo one wood type
+
+@app.get("/wood/wood/<int:id>")
+def show_one_wood(id):
+    with connect_db() as client:
+        # Get the thing details from the DB
+        sql = "SELECT * FROM wood WHERE id=?"
+        params = [id]
+        result = client.execute(sql, params)
+
+        # Did we get a result?
+        if result.rows:
+            # yes, so show it on the page
+            wood = result.rows[0]
+        else:
+            # No, so show error
+            return not_found_error()
+
+        sql = """
+            SELECT *
+            FROM contains,
+            WHERE wid=?
+            
+        """
+        params = [id]
+        result = client.execute(sql, params)
+        
+        if result.rows:
+            orders = result.rows
+            
+        else:
+            return not_found_error()
+        
+
+       
+        
+        return render_template("pages/wood.jinja" ,  orders=orders, wood=wood)
