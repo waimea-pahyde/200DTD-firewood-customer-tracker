@@ -319,17 +319,44 @@ def add_an_order():
     # Get the data from the form
     name  = request.form.get("name")
     date = request.form.get("date")
+    email = request.form.get("email")
+    phone = request.form.get("phone")
+    address = request.form.get("address")
+    
     One = request.form.get("1")
+    
     # Sanitise the text inputs
     name = html.escape(name)
 
     with connect_db() as client:
-        # Add the thing to the DB
-        sql = "INSERT INTO customers, orders, contains (name, date, qty) VALUES (?,?,?)"
-        params = [name,date]
+        # Determine if customer exists 
+        sql = "SELECT id FROM customers WHERE name=?"
+        params = [name]
+        result = client.execute(sql, params)
+        print(result.rows)
+        if len(result.rows)==0:
+            #Create customer
+            sql = "INSERT INTO customers (name, email, phone, address) VALUES (?,?,?,?)"
+            params = [name,email,phone,address]
+            result = client.execute(sql, params)
+            print(result)
+            # Grab newly created customer id 
+            sql = "SELECT id FROM customers WHERE name=?"
+            params = [name]
+            result = client.execute(sql, params)
+
+        # it is now safe to grab id
+
+        customer_id = result.rows[0]
+        print(customer_id)
+        
+
+        # Create an order and associate with customer id
+        sql = "INSERT INTO orders (cid, date) VALUES (?,?)"
+        params = [customer_id,date]
         client.execute(sql, params)
 
-        # Go back to the home page
+        # Go back to the home page TODO better state feedback
         flash(f"{name} added.", "success")
         return redirect("/")
     
