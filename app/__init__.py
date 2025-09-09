@@ -163,18 +163,21 @@ def add_a_thing():
 #-----------------------------------------------------------
 # mr copelys dekleteing a customer thing, which I'm, yet to 
 # impliment anywhere bc I'm scared. 
+#NEVERMIND, WE'VE PUT THIS IN THE CUSTOMERS PAGE
+#TODO maybe put this in the orders page, or wait till  someone saiys it and then do it
+# anyways, it works, don't touch it
 #-----------------------------------------------------------
 @app.get("/delete/<int:id>")
-def delete_a_thing(id):
+def delete_a_customer(id):
     with connect_db() as client:
         # Delete the thing from the DB
-        sql = "DELETE FROM things WHERE id=?"
+        sql = "DELETE FROM customers WHERE id=?"
         params = [id]
         client.execute(sql, params)
 
         # Go back to the home page
         flash("Thing deleted", "success")
-        return redirect("/things")
+        return redirect("/customers")
 
 
 
@@ -187,6 +190,7 @@ def delete_a_thing(id):
 #so like thats never actually gonna have an implimentation
 #But like. It's helpful ig. 
 #TODO i need to get like the quanittiy stuff working - nvm i did that don't worry about it
+#Next TODO - put a 'delete this order' thingy in. 
 #----------------------------------------------------------------
 @app.get("/order/<int:id>")
 def show_one_order(id):
