@@ -22,26 +22,30 @@
 
 <article id="backgroundPieChart">
 
-{# Wood Chart #}
-<div style="width: 800px;">
-    <canvas id="wood-chart"></canvas>
-</div>
+  <div style="width: 800px;">
+      <canvas id="wood-chart"></canvas>
+  </div>
 
-<article id="textBackground">
-    <p class="">Generic Wood: 50%</p>
-    <p>Generic Wood 2: 50%</p>
-</article>
+  <article id="textBackground">
+  
+  {% for ChartWood in ChartWoods%}
+  
+    <p>{{ChartWood.type}} : {{ChartWood.total}}</p>
+  
+  {%endfor%}
 
-</article>
+  </article>
+
+  </article>
+
 
   <article>
-
+    <h1>Woods In Stock</h1>
         <ul>
-            {% for wood in woods %}
+            {% for ChartWood in ChartWoods %}
 
-                <li>
-                    <a href="wood/{{wood.id}}">
-                        {{ wood.type }}
+                <li>        
+                        {{ ChartWood.type }}
                     </a>
 
                 </li>
@@ -56,32 +60,32 @@
     </article>
 
 <script>
-const data = [
 
-    {# Generating the JSON data for the chart #}
-    {% for wood in woods %}
+  const data = [    
+      
+      {% for ChartWood in ChartWoods %}
 
-        { type: "{{ wood.type }}", count: {{ wood.total }} },
+          { type: "{{ ChartWood.type }}", count: {{ ChartWood.total }} },
 
-    {%endfor %}
+      {% endfor %}
 
-  ];
+    ];
 
-new Chart(
-    document.getElementById('wood-chart'),
-    {
-      type: 'pie',
-      data: {
-        labels: data.map(row => row.type),
-        datasets: [
-          {
-            label: 'Wood by Type',
-            data: data.map(row => row.count)
-          }
-        ]
+  new Chart(
+      document.getElementById('wood-chart'),
+      {
+        type: 'pie',
+        data: {
+          labels: data.map(row => row.type),
+          datasets: [
+            {
+              label: 'Wood by Type',
+              data: data.map(row => row.count)
+            }
+          ]
+        }
       }
-    }
-  )
+    )
 </script> 
 
 {% endblock %}

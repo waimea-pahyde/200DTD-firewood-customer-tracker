@@ -31,15 +31,18 @@
 
 <h2>Orders:</h2>
     
-
-
-    {% for order in orders %}
-        <li>
-            <a href="/order/{{ order.id }}">
-                {{ order.date  }}
-            </a>
-        </li>            
-    {% endfor%}
+    {%if not orders == None%}
+        
+        {% for order in orders %}
+            <li>
+                <a href="/order/{{ order.id }}">
+                    {{ order.date  }}
+                </a>
+            </li>            
+        {% endfor%}
+    {%else%}
+        <p>no orders bro</p>
+    {%endif%}
 </article>
 
 </article>

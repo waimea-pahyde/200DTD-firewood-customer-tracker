@@ -9,7 +9,7 @@
 
 {% block title %}
 
-    Order {{ order.id }}
+    Order {{ order }}
 
 {% endblock %}
 
@@ -17,23 +17,42 @@
 
 {% block content %}
 
-<article>
+    <article>
 
-    <h1>Order {{ order.oid }} </h1>
+        <h1>Order {{ order.id }} </h1>
 
-    
-  
-       
-        {{ wood.type    }}
-        {{  order.date   }}
 
- 
 
-<div></div>
+    {% if not contains == None%}
+
+        <ul>
+            {%for woo in wood%}
+        
+                {%for contain in contains%}
+                
+                    {% if contain.wid == woo.id %}
+            
+                        <li>
+                            {{woo.type}} - {{contain.qty}}
+
+                        </li>
+                    {%endif%}
+            
+                {%endfor%}
+        
+            {%endfor %}
+        </ul>
+
+    {%else%}
+        <p>theres no wood in this order cuz i made it while i was testing stuff, change this to make this helpful later.</p>
+
+    {%endif%}
+
+    <div></div>
 
     <a role="button" href="/customers">Back to customers List</a>
 
-</article>
+    </article>
 
 {% endblock %}
 

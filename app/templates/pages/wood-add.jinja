@@ -39,27 +39,22 @@
                   </tr>
                 </thead>
                 <tbody>
+
+                {% for wood in woods %}
                   <tr>
-                    <th scope="row">Generic Wood One</th>
+                    <th scope="row">{{ wood.type }}</th>
                     <td>
                         <input
-                        type="number"
-                        placeholder="amount"
-                        name="1">
+                          type="number"
+                          placeholder="amount"
+                          name="wood-{{ wood.id }}"
+                          
+                        >
                     </td>
                   </tr>
-                  
-                  
-                  <tr>
-                    <th scope="row">Generic Wood Two</th>
-                    <td>
-                        <input
-                        type="number"
-                        placeholder="amount"
-                        name="2">
-                    </td>
-                  </tr>
-                  
+
+                {% endfor %}
+                                    
                 </tfoot>
             </table>
 
