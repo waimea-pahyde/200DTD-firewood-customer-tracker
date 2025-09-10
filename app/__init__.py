@@ -1,8 +1,8 @@
 #===========================================================
-# YOUR PROJECT TITLE HERE
-# YOUR NAME HERE
+# Firewood Business Tracker
+# Polly Hyde
 #-----------------------------------------------------------
-# BRIEF DESCRIPTION OF YOUR PROJECT HERE
+# This is a website to help track afirew
 #===========================================================
 
 from flask import Flask, render_template, request, flash, redirect
