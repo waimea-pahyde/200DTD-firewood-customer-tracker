@@ -14,7 +14,7 @@ Develop a prototype that simulates the key functionality of the system, then tes
 
 This is my initial database design, linking the customer and it's data, to it's order, too what each order contains, and which woods are in each order. 
 
-![SCREENSHOT OF DB DESIGN](screenshots/DrawSQL1)
+![SCREENSHOT OF DB DESIGN](screenshots/DrawSQL1.png)
 
 I showed this to my end user, and the end user said this looked good. 
 

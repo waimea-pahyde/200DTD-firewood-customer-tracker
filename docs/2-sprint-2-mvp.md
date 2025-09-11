@@ -10,9 +10,9 @@ Develop a bare-bones, working web application that provides the key functionalit
 
 ## Implemented Database Schema
 
-Replace this text with notes regarding the DB schema.
+The implimented Database scheme stayed relatively similar to the original database design. However, I removed the ID key from contains, and created a join Primary key instead. 
 
-![SCREENSHOT OF DB SCHEMA](screenshots/example.png)
+![SCREENSHOT OF DB SCHEMA](screenshots/updatedDatabase.png)
 
 
 ---
@@ -20,6 +20,12 @@ Replace this text with notes regarding the DB schema.
 ## Initial Implementation
 
 The key functionality of the web app was implemented:
+
+- A list of all the customers and their orders
+
+- A search bar to search for a specific customer
+
+- A working Pi chart to show all the 
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE SYSTEM HERE**
 

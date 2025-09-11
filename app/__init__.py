@@ -190,7 +190,7 @@ def delete_a_customer(id):
 #so like thats never actually gonna have an implimentation
 #But like. It's helpful ig. 
 #TODO i need to get like the quanittiy stuff working - nvm i did that don't worry about it
-#Next TODO - put a 'delete this order' thingy in. 
+#Next TODO - put a 'delete this order' thingy in. - actually nevermind i don't wsant to it's not needed
 #----------------------------------------------------------------
 @app.get("/order/<int:id>")
 def show_one_order(id):
