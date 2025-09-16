@@ -14,10 +14,14 @@ My website needs to hold and summarise customer data easily for the end-user. Th
 
 I will create a website that can
 
-- Hold a list of customer records
-- Be able to add customers from the database
+- Shows all customers
+
+- Be able to add customers to the database
+
 - Summarises the wood orders from previous years
-- Change customer records
+
+- Search for customers in the list of all customers
+
 - Removes customers from the database
 
 

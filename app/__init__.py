@@ -176,7 +176,7 @@ def delete_a_customer(id):
         client.execute(sql, params)
 
         # Go back to the home page
-        flash("Thing deleted", "success")
+        flash("Customer deleted", "success")
         return redirect("/customers")
 
 

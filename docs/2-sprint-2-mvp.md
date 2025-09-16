@@ -19,95 +19,132 @@ The implimented Database scheme stayed relatively similar to the original databa
 
 ## Initial Implementation
 
-The key functionality of the web app was implemented:
+- Shows all customers and their orders from the database
 
-- A list of all the customers and their orders
+- Be able to add customers to the database
 
-- A search bar to search for a specific customer
+- Summarises the wood orders from previous years with a Pi chart
 
-- A working Pi chart to show all the 
+- Search for customers in the list of customers
+
+- Removes customers from the database
+
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE SYSTEM HERE**
 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Testing showing a list of customers from the database
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+Testing that the database will show a list of all the customers names in the database. 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+List of names in the database:
+
+![List of customer names in the database](screenshots/CustomersInDatabase.png)
+
+
+List of names on the customers page on the website:
+![List of Customers on the website](screenshots/CustomersOrderedByAge.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+I decided it would be more efficiant to order the customers by their name alphabetically, rather than by how long they've been in the database. 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![List of customer names on the website](screenshots/CustomerNamesOnWebsite.png)
 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Testing adding customers to the database
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+I am testing the page to add customers to the database. 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+List of customers before I added any: 
+
+![Before adding a customer](screenshots/CustomersInDatabase.png)
+
+
+Adding:
+![adding a customer](screenshots/addingACustomer.gif)
+
+After:
+
+![added a customer](screenshots/databaseAfterAdding.png)
+
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+
+No changes were necesary. 
+
+---
+
+## Testing the summary of previous orders
+
+Testing the amount and types of wood sold from previous years getting summarised with a chart on the wood page. 
+
+Some of the quanitities and the wood they belong to in the contains table.
+
+![some of the quanitites and the wood they belong to in the contains table.](screenshots/qtyofwoodincontainstable.png)
+
+The wood type the ID  corresponds to:
+
+![the ids the woods match up with](screenshots/theIDS.png)
+
+![pi chart in action](screenshots/PichartTesting.gif)
+
+
+### Changes / Improvements
+
+No changes were necesary. 
+
+---
+
+## Testing searching for customers in the customers list
+
+In the customers table, I am testing the search bar to help the user find certain customers without scrolling. 
+
+![The search bar in action](screenshots/TestingSearchBar.gif)
+
+### Changes / Improvements
+
+No changes were necesary. 
+
+
 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Testing removing customers from the database
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+Testing to make sure, when the remove button is pressed, the customer gets removed from the database.
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+Database before he was removed
 
-### Changes / Improvements
+![Database before he was removed](screenshots/databaseAfterAdding.png)
 
-Replace this text with notes any improvements you made as a result of the testing.
+Removing him:
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Deleting a customer](screenshots/deletingCustomers.gif)
 
+Database after:
 
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![database after deleting](screenshots/CustomersInDatabase.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+Changed the feedback given after a customer was deleted, to say customer deleted
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![customer deleted](screenshots/customerDeleted.png)
 
 
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
 
 
 ---
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+Functionality with adding customers was a struggle, but once it was working the rest of the sprint went smoothly. Linking the tables in the form was difficult 
 
