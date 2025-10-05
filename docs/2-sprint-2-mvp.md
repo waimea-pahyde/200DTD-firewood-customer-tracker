@@ -117,6 +117,27 @@ No changes were necesary.
 
 ---
 
+## End User Feedback
+
+I showed this design to my end user, and the feedback given was
+
+> We need a confirmination screen before a customer was deleted.
+
+![Delete Confirm](screenshots/deleteConfirm.gif)
+
+After showing this to my end-user they saidto change the feedback given after a customer was deleted, to show their name.
+
+Before Changing:
+
+![customer deleted](screenshots/customerDeleted.png)
+
+After Changing:
+
+![Customer deletion changed](screenshots/deleteME.png)
+
+I showed this to the end-user again, in which they said the prototype was working as intended. 
+
+
 ## Testing removing customers from the database
 
 Testing to make sure, when the remove button is pressed, the customer gets removed from the database.
@@ -132,15 +153,6 @@ Removing him:
 Database after:
 
 ![database after deleting](screenshots/CustomersInDatabase.png)
-
-### Changes / Improvements
-
-Changed the feedback given after a customer was deleted, to say customer deleted
-
-![customer deleted](screenshots/customerDeleted.png)
-
-
-
 
 ---
 

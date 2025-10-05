@@ -59,7 +59,7 @@ I added the amount of wood sold to the pi chart, another wood type to better dem
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/JKcLpcsrvzZRWVojkxSdbP/Third-Draft?node-id=0-1&embed-host=share" allowfullscreen></iframe>
 
 The next feedback from the end user was 
-> There needs to be a login screen to secure the database
+
 
 > There needs to be an orders page form
 
@@ -109,20 +109,15 @@ This Figma demo shows the UI with refinements applied:
 
 ### Testing
 
-I gave this design to my end user, and the feed back was 
-
-> No need for a search field on the wood page 
+I gave this design to my end user, and the end user agreed.
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
-
-*FIGMA IMPROVED REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
+No changes were needed. 
 
 ---
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+This sprint allowed us to create an accurate demonstration on how the website will look and feel based on user feedack. It helped refine ideas on how the project wll be made and functionality. 
 
