@@ -30,14 +30,23 @@ The implimented Database scheme stayed relatively similar to the original databa
 - Removes customers from the database
 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE SYSTEM HERE**
+![A customer Page](screenshots/oneCustomer.png)
+
+![orderForm](screenshots/orderForm.png)
+
+
+![pie chat](screenshots/pieChart.png)
+
+![list of customers](screenshots/customer.png)
+
+![home](screenshots/home.png)
 
 
 ---
 
 ## Testing showing a list of customers from the database
 
-Testing that the database will show a list of all the customers names in the database. 
+Testing that the database will show a list of all the customers names in the database on the website.
 
 List of names in the database:
 
@@ -49,7 +58,9 @@ List of names on the customers page on the website:
 
 ### Changes / Improvements
 
-I decided it would be more efficiant to order the customers by their name alphabetically, rather than by how long they've been in the database. 
+The end user feedback was: 
+
+> It would be more efficiant if the website displayed the names in alphabetical order. 
 
 ![List of customer names on the website](screenshots/CustomerNamesOnWebsite.png)
 
@@ -58,7 +69,7 @@ I decided it would be more efficiant to order the customers by their name alphab
 
 ## Testing adding customers to the database
 
-I am testing the page to add customers to the database. 
+Testing the interface that adds customers to the database adds customers to the database.
 
 List of customers before I added any: 
 
@@ -75,9 +86,7 @@ After:
 
 ### Changes / Improvements
 
-
-
-No changes were necesary. 
+The end user decided no changes were necesary.  
 
 ---
 
@@ -117,25 +126,8 @@ No changes were necesary.
 
 ---
 
-## End User Feedback
 
-I showed this design to my end user, and the feedback given was
 
-> We need a confirmination screen before a customer was deleted.
-
-![Delete Confirm](screenshots/deleteConfirm.gif)
-
-After showing this to my end-user they saidto change the feedback given after a customer was deleted, to show their name.
-
-Before Changing:
-
-![customer deleted](screenshots/customerDeleted.png)
-
-After Changing:
-
-![Customer deletion changed](screenshots/deleteME.png)
-
-I showed this to the end-user again, in which they said the prototype was working as intended. 
 
 
 ## Testing removing customers from the database
@@ -153,6 +145,24 @@ Removing him:
 Database after:
 
 ![database after deleting](screenshots/CustomersInDatabase.png)
+
+
+### Changes and feedback
+
+I sho
+
+After showing this to my end-user they saidto change the feedback given after a customer was deleted, to show just 'customer deleted'', rather than their name. 
+
+Before Changing:
+
+![customer deleted](screenshots/customerDeleted.png)
+
+After Changing:
+
+![Customer deletion changed](screenshots/deleteME.png)
+
+I showed this to the end-user again, in which they said the prototype was working as intended. 
+
 
 ---
 

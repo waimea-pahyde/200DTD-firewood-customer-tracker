@@ -33,6 +33,45 @@
 #messages .message.success { color: var(--pico-color-green-500); }
 #messages .message.error   { color: var(--pico-color-red-500); }
 
+
+
+
+
+.nav-link{
+    text-align: right;
+}
+
+#navTitle{
+    line-height: 0;
+    align-self: center;
+}
+
+nav{ 
+    border-bottom: 2px solid   ;
+    border-color: #501D00;
+}
+
+#nav{
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+    line-height: 2rem;
+    height: max-content;
+    color: #501D00;
+}
+
+nav a {
+    text-decoration: none;
+    color: #501D00;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 article#intro {
     display: flex;
     justify-content: center ;
@@ -45,6 +84,7 @@ article#intro {
 article#intro > h1 {
     font-size: 50px ;
     color: #501D00 ;
+    
     margin-left: 2rem;
     margin-right: 2rem;
     font-family: 'Courier New', Courier, monospace;
@@ -115,12 +155,10 @@ article#backgroundOfButtons {
     
   }
 
+
   /* ================================ */
   /* big important ones I ithinkj */
   /* ================================= */
 
 
-header{
-    /* headers around h1s, articles. */
-}
 

@@ -25,27 +25,33 @@
     <script src="/static/js/utils.js"></script>
     <script src="/static/js/script.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.slate.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
-    
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
 
     <link rel="stylesheet" href="/static/css/styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.slate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+
+   
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><strong><a href="/">Flask App Demo</a></strong></li>
-            </ul>
-
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/customers">Customers</a></li>
-                <li><a href="/woods">Wood</a></li>
-            </ul>
+        
+        <nav class="nav flex-column">
+            
+            
+            <a href="/" id="navTitle"><strong>Firewood Business Tracker</strong></a>        
+                
+                <article id="nav">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/customers" class="nav-link">Customers</a>
+                    <a href="/woods" class="nav-link">Wood</a>
+                </article>
+            
         </nav>
     </header>
 
