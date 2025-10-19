@@ -126,6 +126,7 @@ article#backgroundOfButtons {
     background-color: #CE8761;
     color: #501D00;
     
+    
 }
 
 ::placeholder{
@@ -155,6 +156,39 @@ article#backgroundOfButtons {
     
   }
 
+  .borderHeader{
+    display: flex;
+    background-color:#CA9F71;
+    max-width: min-content;
+    justify-self: center;
+    max-height: min-content;
+    text-wrap: nowrap;   
+    border-radius: 2rem;
+  }
+
+  .text{
+    color:#501D00;
+    text-align: center;
+  }
+
+
+
+/* A hidden article to counteract with PIcoCSS */
+.hiddenArticle{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+ul{
+    
+    list-style-type: disc;
+
+    
+}
+
+#LIST{
+    /* border: blue 50px solid; */
+}
 
   /* ================================ */
   /* big important ones I ithinkj */

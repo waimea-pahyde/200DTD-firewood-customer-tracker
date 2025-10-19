@@ -14,9 +14,9 @@
 
 {% block content %}
 
-  <article id="header">
+  <article class="borderHeader">
     
-    <h1>Customer Data</h1>
+    <h1 class="text">Customer Data</h1>
     
   </article>
 
@@ -38,7 +38,9 @@
     onchange="this.form.submit()"/>
     </form>
 
-  {# Showing the search results #}
+ 
+ {# Showing the search results #}
+    
     {%for result in results%}
       <a href="/customer/{{result.id}}">
       {{result.name}}
@@ -46,16 +48,16 @@
       <br>
     
     {%endfor%}
-
+ 
   </article>
 
 
 {# Customer List #}
   <article>      
     
-    <H2>Cutomers:</H2>
+    <H2 class="text">Customers</H2>
     
-    <ul>
+    <ul id="LIST">
       {% for customer in customers %}
 
         <li>
