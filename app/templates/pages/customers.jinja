@@ -24,7 +24,7 @@
 
   {# The custoemrs list - Don't move this #}
   
-  <article>
+   <article>
   
   
     {# Search function, search bar, form  #}
@@ -49,11 +49,9 @@
     
     {%endfor%}
  
-  </article>
-
-
+<hr>
 {# Customer List #}
-  <article>      
+       
     
     <H2 class="text">Customers</H2>
     
@@ -61,11 +59,12 @@
       {% for customer in customers %}
 
         <li>
-          <a href="/customer/{{ customer.id }}">
+          <a href="/customer/{{ customer.id }}" >
               
               {{ customer.name }}
                     
           </a>
+          
 
         <ul>
               
@@ -76,14 +75,17 @@
                   {{ order.date  }}
                 </a>
               </li>
+              <hr>
             {% endif %}
             {% else %}
                            
               <li>NONE</li>
                         
           {% endfor %}
+          
                     
         </ul>
+        
       </li>
 
     {% else %}

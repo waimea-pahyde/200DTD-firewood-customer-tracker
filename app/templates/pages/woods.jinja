@@ -16,21 +16,21 @@
 
 {% block content %}
 
-    <article id="intro">
-    <h1>Wood Data</h1>
+    <article class="borderHeader">
+    <h1 class="text">Wood Data</h1>
     </article>
 
 <article id="backgroundPieChart">
 
-  <div style="width: 800px;">
+  <div style="width: 350px;">
       <canvas id="wood-chart"></canvas>
   </div>
 
-  <article id="textBackground">
+  <article  class="innerbackground">
   
   {% for ChartWood in ChartWoods%}
   
-    <p>{{ChartWood.type}} : {{ChartWood.total}}</p>
+    <p class="white">{{ChartWood.type}} : {{ChartWood.total}}</p>
   
   {%endfor%}
 
@@ -40,7 +40,7 @@
 
 
   <article>
-    <h1>Woods In Stock</h1>
+    <h1 class="text">Woods In Stock</h1>
         <ul>
             {% for ChartWood in ChartWoods %}
 

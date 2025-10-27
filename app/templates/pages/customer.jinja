@@ -16,40 +16,45 @@
 
 {% block content %}
 
-<article>
+<article class="background">
 
-<h1>{{ customer.name }}</h1>
+    <article class="borderHeader" id="nameplate">
+        <h1 class="text">{{ customer.name }}</h1>
+    </article>
 
-<article>
+<article class="innerbackground">
 
-<p>Email: {{customer.email}} </p>
-<p>phone: {{customer.phone}} </p>
-<p>Address: {{customer.address}} </p>
+<p class="white">EMAIL: {{customer.email}} </p>
+<p class="white">PHONE NUM.: {{customer.phone}} </p>
+<p class="white">address: {{customer.address}} </p>
 </article>
 
-<article>
+<article class="innerbackground" id="orders">
 
-<h2>Orders:</h2>
+<h2 class="text" >Orders:</h2>
+
     
     {%if not orders == None%}
         
         {% for order in orders %}
-            <li>
-                <a href="/order/{{ order.id }}">
+            <p>
+                <a href="/order/{{ order.id }}" class="date">
                     {{ order.date  }}
                 </a>
-            </li>            
+            </p>            
         {% endfor%}
     {%else%}
-        <p>no orders :thumbsup:</p> 
-        {# change this to something actually helpful #}
+        <p>This person has no orders. </p> 
+    
     {%endif%}
-</article>
 
+     
+</article>
+<a href="/delete/{{ customer.id }}" onclick="return confirm('Really delete?');" role="button" class="brownButton">Delete</a>
 </article>
 
     <footer>
-        <a href="/delete/{{ customer.id }}" onclick="return confirm('Really delete?');">Delete</a>
+       
     </footer>
 
 {% endblock %}

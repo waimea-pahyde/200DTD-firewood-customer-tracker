@@ -106,14 +106,14 @@ article#backgroundOfButtons {
 
 }
 
-#IAMBUTTON {
-    background-color: #CE8761;
-    color: aliceblue;
-    border-color: #CE8761;
-    justify-content: center;
-    justify-self: center;
-    flex: 1;
-    opacity: 100%;
+.brownButton {
+    background-color: #CE8761 !important;
+    color: aliceblue !important;
+    border-color: #CE8761 !important;
+    justify-content: center !important;
+    justify-self: center!important;
+    flex: 1!important;
+    opacity: 100%!important;
 
 }
 
@@ -130,7 +130,7 @@ article#backgroundOfButtons {
 }
 
 ::placeholder{
-    color: #501D00;
+    color: #501D00 !important;
 }
 
 ::-ms-input-placeholder { /* Edge 12 -18 */
@@ -156,20 +156,9 @@ article#backgroundOfButtons {
     
   }
 
-  .borderHeader{
-    display: flex;
-    background-color:#CA9F71;
-    max-width: min-content;
-    justify-self: center;
-    max-height: min-content;
-    text-wrap: nowrap;   
-    border-radius: 2rem;
-  }
 
-  .text{
-    color:#501D00;
-    text-align: center;
-  }
+
+
 
 
 
@@ -180,19 +169,113 @@ article#backgroundOfButtons {
 }
 
 ul{
-    
-    list-style-type: disc;
-
+ list-style-type: none;
     
 }
 
 #LIST{
-    /* border: blue 50px solid; */
+    list-style-type: none;
+    list-style-type: circle;
+    list-style-type: upper-roman;
+    list-style-type: circle;
+    list-style-type: disc;
+    list-style: circle;
+    list-style: armenian    ;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: #501D00;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+#nameplate{
+    border-radius: 1rem;
+    
+
+}
+
+#orders{
+    width:100%;
+}
+
+.date{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    justify-self: center;
 }
 
   /* ================================ */
   /* big important ones I ithinkj */
   /* ================================= */
+  .text{ /*Dark text in log*/
+    color:#501D00;
+    text-align: center;
+    justify-self: center;
+  }
 
+  .borderHeader{ /*The "log"*/
+    display: flex;
+    background-color:#CA9F71;
+    justify-self: center;
+    
+    /* justify-self: center; */
+    justify-content: center;
+    text-wrap: nowrap;   
+    border-radius: 2rem;
+    width: 50%;
+  }
 
+  .innerbackground{
+    display: flex;
+    background-color: #CE8761;
+    color: white;
+    flex-direction: column;
+    width: min-content;
+    text-wrap: nowrap;
+    /* justify-self: center; */
+    margin: 5%;
+    -ms-flex-align: center;
+    /* align-items: center; */
+    border-radius: 1rem;
+    justify-content: center;
+  }
 
+.white {
+    color: white;
+    justify-content: center;
+}
+
+.background{
+    display: flex;
+    background-color: #7D4F37;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: column;
+    
+    align-items: center;
+    
+    width: 100%
+
+}
+
+.input{
+    background-color: #CE8761;
+    color: #501D00;
+}
+input{
+    background-color: #CE8761 !important;
+}
+
+table{
+    background-color: #CE8761 !important;
+}

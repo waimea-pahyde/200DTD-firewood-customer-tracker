@@ -11,7 +11,7 @@ If you own a firewood business, it can be hard to keep track of what the custome
 
 - Hold a list of customer records
 - Be able to add customers from the database
-- Summarises the wood orders from previous years
+- Shows the wood orders from previous years
 - Change customer records
 - Removes customers from the database
 
@@ -21,6 +21,9 @@ If you own a firewood business, it can be hard to keep track of what the custome
 ## Project Links
 
 - [GitHub repo for the project](https://github.com/waimea-pahyde/200DTD-firewood-customer-tracker)
+
+- [Project documentation](https://waimea-pahyde.github.io/200DTD-firewood-customer-tracker/)
+
 - [Live web app](https://...)
 
 

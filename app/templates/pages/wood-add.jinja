@@ -15,16 +15,17 @@
 
 
 {% block content %}
-
-    <h1>Log an order</h1>
-
-    <article>
+  <article class="borderHeader">
+    <h1 class="text">Log an order</h1>
+</article>
+    <article class="background">
         <form action="/add" method="POST">
 
             <input
                 type="text"
                 name="name"
                 placeholder="Customer Name"
+                class="input"
                 required
             >
 
