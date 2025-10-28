@@ -29,19 +29,6 @@ I will create a website that can
 
 # Relevant Implications
 
-## Privacy
-
-MAking sure end user data remains private
-
-### Relevance to the System
-
-My system will hold private user data, like email addresses, addresses, and phone numbers. 
-
-### Impact / Considerations
-
-My website will need to hold data securely. 
-
-
 
 ## Usability
 
@@ -66,8 +53,7 @@ My website will need to be functional, because a crash could cause the customer 
 
 ### Impact / Considerations
 
-I will put care into coding it so it has little to no bugs. 
-
+I will put care into creating it so it has efficiancy. 
 
 ## Aesthetic
 

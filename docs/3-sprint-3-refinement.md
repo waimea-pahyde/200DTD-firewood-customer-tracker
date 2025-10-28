@@ -33,82 +33,47 @@ The web app is fully implemented with a refined UI:
 ![Final Order Form](screenshots/finalOrdersPage.png)
 ---
 
-## Testing FEATURE NAME HERE
+## Testing home page design with the end user. 
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+Showing the website to the end user, their feedback was 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+> The colour scheme fits the design of the business well. 
+
+> I don't like the title font on the home page. 
+
+
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+I changed the font to be consistant with the rest of the page. 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+Title before the font was changed
+
+![Title font before change](screenshots/fontBefore.png)
+
+
+Title after the font was changed
+
+![Title Font after changing](screenshots/fontAfterChanging.png)
 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Showing the website to the end user
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+After showing the website to the end user, their feedback was 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+> Change the background colour to be a light brown to match the rest of the website's aesthetic. 
 
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Original Background Colour](screenshots/OriginalBackgroundColour.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![New background Colour](screenshots/newBackgroundColour.png)
 
 
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
+I showed this design to the end user, who said the website looked great. 
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
-
+This sprint went smoothly, and CSS was effectivelt implemented into the website system to create a more customised and friendly experience for our end user.

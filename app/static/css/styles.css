@@ -5,6 +5,10 @@
 
 /* ABOUT PAGE -------------------------------------------- */
 
+html{
+    background-color: antiquewhite;
+}
+
 #tech-stack {
     display: flex;
     gap: 1rem;
@@ -72,29 +76,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-article#intro {
-    display: flex;
-    justify-content: center ;
-    background-color: #CA9F71;
-    max-width: min-content;
-    justify-self: center;
 
-}
-
-article#intro > h1 {
-    font-size: 50px ;
-    color: #501D00 ;
-    
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-    flex-wrap: nowrap;
-    text-wrap: nowrap;
-
-  
-    
-
-}
 
 
 article#backgroundOfButtons {
@@ -139,9 +121,7 @@ article#backgroundOfButtons {
     color: #501D00 !important;
 }
 
-::-ms-input-placeholder { /* Edge 12 -18 */
-    color: red;
-  }
+
 
 #image{
     max-width: 50%;

@@ -2,38 +2,37 @@
 
 ## Addressing Relevant Implications
 
-### NAME OF IMPLICATION 1
+### Usability
 
-Replace this text with notes about what you did during the project to address the implication - design features, etc.
-
-
-### NAME OF IMPLICATION 2
-
-Replace this text with notes about what you did during the project to address the implication - design features, etc.
+To create the most efficiancy, I put the most necesary things as quick links on the home page, as well as adding a top bar with the same most commonly used quick links. As well as that, information about the customers phone number and address are placed at the top of the page, while their past orders are placed at the bottom. 
 
 
-### NAME OF IMPLICATION 3
+### Functionality
 
-Replace this text with notes about what you did during the project to address the implication - design features, etc.
-
-
-### NAME OF IMPLICATION 4
-
-Replace this text with notes about what you did during the project to address the implication - design features, etc.
+My website is functional, All the links lead to pages and the add and delete functions both work well. 
 
 
-### NAME OF IMPLICATION 5
+### Aesthetic
 
-Replace this text with notes about what you did during the project to address the implication - design features, etc.
+Using feedback from my end user, I created a website that was aestheticly pleasing, that also corrosponds to the colours of the brand logo and company. The end user also agrees that the website is aesthetically pleasing to them. 
+
+
+### End-user
+
+Using constant feedback from my end user, I have created a website that tailors to my end users needs, and makes life conviniant for them. 
+
+
+### Accessability
+
+Headings and titles are in large letters, allowing them to be read by people who may have low-vision. Along with that, there's a good contrast between text and their backgrounds.
 
 
 ---
 
 ## Overall Review
 
-Replace these words with a brief review of how the project went in terms of:
-- What went well?
-- What didn't go so well?
+I produced a great outcome based on the feedback from my end user. Testing and trialling did reveal multiple things that needed fixing 
+
 - How did the testing/trialling impact the final system?
 - What would you do differently if you could?
 
