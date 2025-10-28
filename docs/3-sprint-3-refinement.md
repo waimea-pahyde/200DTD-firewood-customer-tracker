@@ -10,9 +10,8 @@ Develop the system until it is fully featured, with a refined UI and it satisfie
 
 ## Updated Database Schema (if it changed)
 
-Replace this text with notes regarding the DB schema.
+The database schema has not changed since the previous stage of development. 
 
-![SCREENSHOT OF DB SCHEMA](screenshots/example.png)
 
 
 ---
@@ -21,9 +20,17 @@ Replace this text with notes regarding the DB schema.
 
 The web app is fully implemented with a refined UI:
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE SYSTEM HERE**
+![Home Page](screenshots/homePageDesign.png)
 
+![customers Page](screenshots/finalCustomerPage.png)
 
+![customer page](screenshots/singleCustomerFinal.png)
+
+![Final Order Page](screenshots/finalOrderPage.png)
+
+![Final Wood Page](screenshots/finalwoodPage.png)
+
+![Final Order Form](screenshots/finalOrdersPage.png)
 ---
 
 ## Testing FEATURE NAME HERE

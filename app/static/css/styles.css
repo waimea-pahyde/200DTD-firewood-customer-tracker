@@ -117,6 +117,12 @@ article#backgroundOfButtons {
 
 }
 
+.brownButton:hover{
+    text-decoration: none;
+    background-color: #D9A082 !important
+    ;
+}
+
 
 #search {
     display: flex;
@@ -162,7 +168,7 @@ article#backgroundOfButtons {
 
 
 
-/* A hidden article to counteract with PIcoCSS */
+/* A hidden article to counteract with PicoCSS */
 .hiddenArticle{
     background-color: transparent;
     box-shadow: none;
@@ -173,16 +179,6 @@ ul{
     
 }
 
-#LIST{
-    list-style-type: none;
-    list-style-type: circle;
-    list-style-type: upper-roman;
-    list-style-type: circle;
-    list-style-type: disc;
-    list-style: circle;
-    list-style: armenian    ;
-
-}
 
 a {
 
@@ -216,7 +212,9 @@ a:hover{
   /* ================================ */
   /* big important ones I ithinkj */
   /* ================================= */
-  .text{ /*Dark text in log*/
+  
+  /*Dark text in log for headers*/
+  .text{ 
     color:#501D00;
     text-align: center;
     justify-self: center;
@@ -233,8 +231,8 @@ a:hover{
     border-radius: 2rem;
     min-width: 50%;
   }
-
-  .innerbackground{
+/* Light brown section inside darker brown section*/
+  .innerbackground{ 
     display: flex;
     background-color: #CE8761;
     color: white;
@@ -249,11 +247,14 @@ a:hover{
     justify-content: center;
   }
 
-.white {
+  /* Makes the text white, usually inside the inner background but not always. Can also be used for lists.*/
+.white { 
     color: white;
     justify-content: center;
+    list-style-type: circle;
 }
 
+/* Dark brown background */
 .background{
     display: flex;
     background-color: #7D4F37;
@@ -268,16 +269,8 @@ a:hover{
 
 }
 
-.input{
-    background-color: #CE8761;
-    color: #501D00;
-}
 
-.input:focus {
-    background-color: #D9A082 !important;
-}
-
-
+/* Inputs for forms. */
 input{
     background-color: #CE8761 !important;
     border-color: #501D00 !important;

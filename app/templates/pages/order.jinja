@@ -17,14 +17,16 @@
 
 {% block content %}
 
-    <article>
+    <article class="background">
 
-        <h1>Order {{ order.id }} </h1>
-
+    <article class="borderHeader">
+        <h1 class="text">Order {{ order.id }} </h1>
+    </article>
 
 
     {% if not contains == None%}
 
+        <article class="innerbackground">
         <ul>
             {%for woo in wood%}
         
@@ -32,7 +34,7 @@
                 
                     {% if contain.wid == woo.id %}
             
-                        <li>
+                        <li class="white">
                             {{woo.type}} - {{contain.qty}}
 
                         </li>
@@ -42,15 +44,15 @@
         
             {%endfor %}
         </ul>
-
+        </article>
     {%else%}
-        <p>theres no wood in this order cuz i made it while i was testing stuff, change this to make this helpful later.</p>
+        <p>No wood was in this order.</p>
 
     {%endif%}
 
     <div></div>
 
-    <a role="button" href="/customers">Back to customers List</a>
+    <a role="button" href="/customers" class="brownButton">Back to customers List</a>
 
     </article>
 
