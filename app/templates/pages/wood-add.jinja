@@ -32,23 +32,24 @@
             <input type="date" name="date" aria-label="Date">
     
             
-            <table>
+            <table id="theTable">
                 <thead>
-                  <tr>
-                    <th scope="col">Woods</th>
-                    <th scope="col">Amounts</th>
+                  <tr id="theTable">
+                    <th scope="col" class="theTable">Woods</th>
+                    <th scope="col" class="theTable">Amounts</th>
                   </tr>
                 </thead>
                 <tbody>
 
                 {% for wood in woods %}
                   <tr>
-                    <th scope="row">{{ wood.type }}</th>
-                    <td>
+                    <th scope="row" class="theTable">{{ wood.type }}</th>
+                    <td class="theTable">
                         <input
                           type="number"
                           placeholder="amount"
                           name="wood-{{ wood.id }}"
+                          id="lighterBrown"
                           
                         >
                     </td>
@@ -79,7 +80,7 @@
                 required
             >
 
-            <button>Place Order</button>
+            <button id="lightbrownButton">Place Order</button>
 
         </form>
 

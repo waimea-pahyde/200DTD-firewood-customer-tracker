@@ -231,7 +231,7 @@ a:hover{
     justify-content: center;
     text-wrap: nowrap;   
     border-radius: 2rem;
-    width: 50%;
+    min-width: 50%;
   }
 
   .innerbackground{
@@ -272,10 +272,42 @@ a:hover{
     background-color: #CE8761;
     color: #501D00;
 }
-input{
-    background-color: #CE8761 !important;
+
+.input:focus {
+    background-color: #D9A082 !important;
 }
 
-table{
+
+input{
     background-color: #CE8761 !important;
+    border-color: #501D00 !important;
+
+}
+input:focus {
+    background-color: #D9A082 !important;
+}
+
+.theTable {
+    background-color: #CE8761;
+    border-color: #501D00 !important;
+}
+
+#lighterBrown {
+    background-color: #D9A082
+    !important; 
+    border-color: #501D00 !important;
+}
+
+
+
+#lightbrownButton {
+    background-color: #CA9F71;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border-color: #D3AF88;
+
+}
+#lightbrownButton:hover{
+    background-color: #D3AF88;
 }
