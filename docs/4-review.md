@@ -31,8 +31,6 @@ Headings and titles are in large letters, allowing them to be read by people who
 
 ## Overall Review
 
-I produced a great outcome based on the feedback from my end user. Testing and trialling did reveal multiple things that needed fixing 
+I produced a great outcome based on the feedback from my end user. Testing and trialling did reveal multiple things that needed fixing or changing in order to produce the best product possible. Next time, I would allocate less time to prototyping and more time into creating the first product. 
 
-- How did the testing/trialling impact the final system?
-- What would you do differently if you could?
 

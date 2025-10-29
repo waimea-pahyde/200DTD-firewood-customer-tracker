@@ -63,6 +63,10 @@ The next feedback from the end user was
 
 > There needs to be an orders page form
 
+> There is no need for a pi chart on the customers page
+
+> There is no need for a page for individual wood. 
+
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/wi6YB8CYlfreT2zdBejfmF/Fourth-draft?node-id=0-1&embed-host=share" allowfullscreen></iframe>
 
 I brought that design back to the end user, and the end user agreed with the design. 

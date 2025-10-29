@@ -88,4 +88,4 @@ Everyone Can Use It, On Any Device
 My website needs to be accessible for all  n the users.
 
 ### Impact / Considerations
-This could mean larger font sizes, or increased colours. 
+This could mean larger font sizes.
